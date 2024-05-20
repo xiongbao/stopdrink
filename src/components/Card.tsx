@@ -22,7 +22,7 @@ const Card = ({ id, title, createdAt, category, labels }: CardProps) => {
 
   return (
     <Link href={`/records/${id}`} className="block mb-4">
-      <article className="px-4 py-5 border border-neutral-800 rounded-xl space-y-2 hover:bg-neutral-800 duration-200">
+      <article className="px-4 py-5 border-[0.5px] border-white/20 bg-black/10 backdrop-blur-md rounded-lg space-y-2 hover:bg-black/30 duration-200">
         <h3 className="font-semibold">{title}</h3>
         <div className="flex flex-wrap items-baseline space-x-4 text-sm text-neutral-300">
           {category && (

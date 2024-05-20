@@ -7,6 +7,3 @@ html, body {
   margin: 0;
   padding: 0;
 }
-body {
-  @apply bg-[url(/images/drink.fail.jpg)] bg-no-repeat bg-cover bg-center;
-}

@@ -31,7 +31,7 @@ const Page = async ({ params }: PageProps) => {
     <main className="px-4 my-20">
       <article className="prose prose-lg mx-auto prose-neutral prose-invert prose-img:rounded-lg prose-img:w-full prose-a:text-blue-600 hover:prose-a:text-blue-500 prose-pre:bg-[#0c1117] prose-pre:p-2 prose-pre:rounded-xl">
         <h1>{post.title}</h1>
-        <CodeHighlightedContent content={post.bodyHTML} />
+        <div className="px-4 rounded-lg border-[0.5px] border-white/20 bg-black/10 backdrop-blur-lg hover:bg-black/30"><CodeHighlightedContent content={post.bodyHTML} /></div>
       </article>
     </main>
   );

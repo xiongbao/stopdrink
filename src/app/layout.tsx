@@ -14,7 +14,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" type="image/webp" href="/images/favicon.png" />
       </head>
-      <body className={`${inter.className} bg-black text-white`}>
+      <body className={`${inter.className} bg-gray-800 text-white bg-[url(/images/drink.fail.jpg)] bg-no-repeat bg-cover bg-center`}>
         <Navbar />
         {children}
       </body>

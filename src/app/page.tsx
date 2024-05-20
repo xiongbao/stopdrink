@@ -18,15 +18,15 @@ const Page = () => {
           <h1 className="mb-8 text-2xl uppercase font-semibold text-neutral-400">
             戒酒计划
           </h1>
-          <p className="text-4xl font-semibold leading-snug">
-            2023 年 7 月开始了异地工作，此站记录老家-工作地-妻女之间的计划。
+          <p className="text-xl font-light sm:text-4xl sm:font-semibold leading-snug">
+            这是一项实验，自5月20日起戒酒半个月，记录期间滴酒不沾后的身体状态。
           </p>
         </header>
       </section>
 
       <section className="my-20">
         <header className="flex justify-between items-center mb-6">
-          <h2 className="text-2xl font-semibold">状态记录</h2>
+          <h2 className="text-2xl font-semibold">近期</h2>
           <Link
             href="/records"
             className="group block text-xs uppercase hover:text-neutral-400 duration-200"
@@ -42,7 +42,7 @@ const Page = () => {
             <CardSkeleton key={i} />
           ))}
         >
-          <CardsList limit={10} offset={0} />
+          <CardsList limit={5} offset={0} />
         </Suspense>
       </section>
     </main>
