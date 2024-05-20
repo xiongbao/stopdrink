@@ -1,7 +1,7 @@
 ## What is it?
 
-This app is built with React and NextJS. It uses Github Discussions to store posts.
-Check it out on [ulvidamirli.com](http://ulvidamirli.com).
+This app is built with **React** and **NextJS**. It uses **Github Discussions** to store posts. Record my daily physical state after **I quit drinking**.
+Check it out on [StopDr.ink](https://stopdr.ink/).
 
 ## Getting Started
 
