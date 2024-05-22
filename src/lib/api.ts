@@ -50,7 +50,7 @@ export async function getPostsList(
       headers: {
         Authorization: `Bearer ${process.env.GITHUB_API_TOKEN}`,
       },
-      body: JSON.stringify({ query }),
+      body: JSON.stringify({ query, variables: { random: Math.random().toString() } }),
     });
     if (res.status === 404) notFound();
     if (!res.ok) throw new Error(res.statusText);
@@ -91,7 +91,7 @@ export async function getPostDetail(id: string): Promise<PostDetailProps> {
       headers: {
         Authorization: `Bearer ${process.env.GITHUB_API_TOKEN}`,
       },
-      body: JSON.stringify({ query }),
+      body: JSON.stringify({ query, variables: { random: Math.random().toString() } }),
     });
     if (res.status === 404) notFound();
     if (!res.ok) throw new Error(res.statusText);

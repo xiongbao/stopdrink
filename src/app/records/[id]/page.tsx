@@ -15,7 +15,7 @@ export async function generateMetadata({
   const strippedString = post.bodyHTML.replace(/(<([^>]+)>)/gi, "");
 
   return {
-    title: `${post.title} | Ulvi Damirli`,
+    title: `${post.title} | 戒酒中`,
     description: strippedString.trim().slice(0, 150),
     alternates: {
       canonical: `/records/${post.number}`,

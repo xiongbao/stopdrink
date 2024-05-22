@@ -4,7 +4,7 @@ import { Suspense } from "react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Ulvi Damirli | Posts",
+  title: "所有记录｜戒酒中",
   description:
     "Software Engineer who loves to design and build digital products.",
 };
