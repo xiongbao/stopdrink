@@ -49,8 +49,9 @@ export async function getPostsList(
       method: "POST",
       headers: {
         Authorization: `Bearer ${process.env.GITHUB_API_TOKEN}`,
+        "Cache-Control": "no-cache",
       },
-      body: JSON.stringify({ query, variables: { random: Math.random().toString() } }),
+      body: JSON.stringify({ query }),
     });
     if (res.status === 404) notFound();
     if (!res.ok) throw new Error(res.statusText);
@@ -90,8 +91,9 @@ export async function getPostDetail(id: string): Promise<PostDetailProps> {
       method: "POST",
       headers: {
         Authorization: `Bearer ${process.env.GITHUB_API_TOKEN}`,
+        "Cache-Control": "no-cache",
       },
-      body: JSON.stringify({ query, variables: { random: Math.random().toString() } }),
+      body: JSON.stringify({ query }),
     });
     if (res.status === 404) notFound();
     if (!res.ok) throw new Error(res.statusText);
